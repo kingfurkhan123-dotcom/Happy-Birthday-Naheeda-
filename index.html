@@ -13,76 +13,77 @@
 
 body{
     margin:0;
-    overflow:hidden;
+    overflow-x:hidden;
     background:linear-gradient(135deg,#ffe6f0,#fff5f8,#fce4ec);
     text-align:center;
     font-family:'Cormorant Garamond',serif;
+    color:#333;
 }
 
 .container{
     position:relative;
     z-index:10;
-    padding-top:40px;
+    padding:80px 20px 120px;
     animation:fadeIn 2s ease;
 }
 
 .hey{
     font-family:'Dancing Script',cursive;
-    font-size:120px;
+    font-size:140px;
     color:#e91e63;
     margin-bottom:10px;
 }
 
 .birthday{
     font-family:'Dancing Script',cursive;
-    font-size:90px;
+    font-size:110px;
     color:#ff4d88;
-    margin:20px 0;
+    margin-bottom:30px;
 }
 
 .message{
-    font-size:40px;
+    font-size:48px;
     line-height:1.8;
-    max-width:1200px;
+    max-width:1300px;
     margin:auto;
-    padding:0 30px;
 }
 
 .reason{
     font-family:'Dancing Script',cursive;
-    font-size:140px;
+    font-size:170px;
     color:#ff4d88;
-    margin-top:30px;
-    margin-bottom:20px;
-    text-shadow:0 0 20px rgba(255,128,170,.8);
+    margin-top:40px;
+    margin-bottom:40px;
+    text-shadow:0 0 25px rgba(255,128,170,.8);
     animation:glow 2s infinite;
 }
 
 .ready{
-    font-size:60px;
+    font-size:75px;
     font-weight:bold;
     margin-top:20px;
+    margin-bottom:20px;
 }
 
 .warning{
-    font-size:32px;
+    font-size:40px;
     max-width:1200px;
     margin:auto;
-    margin-top:25px;
-    padding:0 30px;
+    margin-top:20px;
+    line-height:1.6;
 }
 
 .btn{
-    margin-top:40px;
+    margin-top:50px;
     display:inline-block;
     text-decoration:none;
-    padding:25px 70px;
-    border-radius:60px;
+    padding:30px 80px;
+    border-radius:70px;
     background:linear-gradient(45deg,#ff4d88,#ff80aa);
     color:white;
-    font-size:38px;
+    font-size:42px;
     font-weight:bold;
-    box-shadow:0 0 35px rgba(255,77,136,.6);
+    box-shadow:0 0 40px rgba(255,77,136,.7);
     animation:pulse 2s infinite;
 }
 
@@ -103,9 +104,15 @@ body{
 }
 
 @keyframes fadeIn{
-    from{opacity:0;}
-    to{opacity:1;}
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
+
+/* Floating Elements */
 
 .floating{
     position:fixed;
@@ -130,7 +137,7 @@ body{
         transform:translateY(0);
     }
     to{
-        transform:translateY(-130vh);
+        transform:translateY(-140vh);
     }
 }
 
@@ -140,26 +147,26 @@ body{
 <body>
 
 <!-- BALLOONS -->
-<div class="floating float1" style="left:5%;font-size:60px;">🎈</div>
-<div class="floating float2" style="left:12%;font-size:55px;">🎈</div>
-<div class="floating float3" style="left:20%;font-size:65px;">🎈</div>
-<div class="floating float1" style="left:28%;font-size:60px;">🎈</div>
-<div class="floating float2" style="left:36%;font-size:70px;">🎈</div>
-<div class="floating float3" style="left:44%;font-size:60px;">🎈</div>
-<div class="floating float1" style="left:52%;font-size:65px;">🎈</div>
-<div class="floating float2" style="left:60%;font-size:55px;">🎈</div>
-<div class="floating float3" style="left:68%;font-size:70px;">🎈</div>
-<div class="floating float1" style="left:76%;font-size:60px;">🎈</div>
-<div class="floating float2" style="left:84%;font-size:65px;">🎈</div>
-<div class="floating float3" style="left:92%;font-size:60px;">🎈</div>
+<div class="floating float1" style="left:3%;font-size:65px;">🎈</div>
+<div class="floating float2" style="left:10%;font-size:60px;">🎈</div>
+<div class="floating float3" style="left:18%;font-size:70px;">🎈</div>
+<div class="floating float1" style="left:26%;font-size:65px;">🎈</div>
+<div class="floating float2" style="left:34%;font-size:75px;">🎈</div>
+<div class="floating float3" style="left:42%;font-size:65px;">🎈</div>
+<div class="floating float1" style="left:50%;font-size:70px;">🎈</div>
+<div class="floating float2" style="left:58%;font-size:60px;">🎈</div>
+<div class="floating float3" style="left:66%;font-size:75px;">🎈</div>
+<div class="floating float1" style="left:74%;font-size:65px;">🎈</div>
+<div class="floating float2" style="left:82%;font-size:70px;">🎈</div>
+<div class="floating float3" style="left:90%;font-size:65px;">🎈</div>
 
 <!-- CAKES -->
-<div class="floating float1" style="left:10%;font-size:50px;">🎂</div>
-<div class="floating float2" style="left:25%;font-size:45px;">🧁</div>
-<div class="floating float3" style="left:40%;font-size:50px;">🎂</div>
-<div class="floating float1" style="left:55%;font-size:45px;">🧁</div>
-<div class="floating float2" style="left:70%;font-size:50px;">🎂</div>
-<div class="floating float3" style="left:85%;font-size:45px;">🧁</div>
+<div class="floating float1" style="left:8%;font-size:55px;">🎂</div>
+<div class="floating float2" style="left:22%;font-size:50px;">🧁</div>
+<div class="floating float3" style="left:38%;font-size:55px;">🎂</div>
+<div class="floating float1" style="left:54%;font-size:50px;">🧁</div>
+<div class="floating float2" style="left:70%;font-size:55px;">🎂</div>
+<div class="floating float3" style="left:86%;font-size:50px;">🧁</div>
 
 <div class="container">
 
@@ -197,6 +204,8 @@ Ready To Find Out? 👀
 emotional damage,
 and one overly obsessed person. 🤷😂
 </div>
+
+<br><br>
 
 <a href="story.html" class="btn">
 ❤️ Open My Heart ❤️
