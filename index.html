@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For A Reason ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    overflow:hidden;
+    background:linear-gradient(135deg,#ffe6f0,#fff5f8,#fce4ec);
+    font-family:'Cormorant Garamond',serif;
+    text-align:center;
+}
+
+.container{
+    position:relative;
+    z-index:10;
+    padding-top:90px;
+    animation:fadeIn 2s ease;
+}
+
+h1{
+    font-family:'Dancing Script',cursive;
+    font-size:85px;
+    color:#e91e63;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:34px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.reason{
+    font-family:'Dancing Script',cursive;
+    font-size:75px;
+    color:#ff4d88;
+    margin-top:35px;
+    margin-bottom:35px;
+    animation:glow 2s infinite;
+}
+
+.warning{
+    margin-top:25px;
+    font-size:28px;
+}
+
+.btn{
+    margin-top:40px;
+    padding:22px 60px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff4d88,#ff80aa);
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    box-shadow:0 0 30px rgba(255,77,136,.6);
+    animation:pulse 2s infinite;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+@keyframes glow{
+    50%{
+        opacity:.6;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/* Floating Items */
+
+.floating{
+    position:fixed;
+    bottom:-100px;
+    pointer-events:none;
+}
+
+.float1{
+    animation:floatUp 18s linear infinite;
+}
+
+.float2{
+    animation:floatUp 22s linear infinite;
+}
+
+.float3{
+    animation:floatUp 25s linear infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BALLOONS -->
+<div class="floating float1" style="left:5%;font-size:50px;">🎈</div>
+<div class="floating float2" style="left:15%;font-size:55px;">🎈</div>
+<div class="floating float3" style="left:25%;font-size:50px;">🎈</div>
+<div class="floating float1" style="left:35%;font-size:60px;">🎈</div>
+<div class="floating float2" style="left:45%;font-size:50px;">🎈</div>
+<div class="floating float3" style="left:55%;font-size:55px;">🎈</div>
+<div class="floating float1" style="left:65%;font-size:50px;">🎈</div>
+<div class="floating float2" style="left:75%;font-size:60px;">🎈</div>
+<div class="floating float3" style="left:85%;font-size:50px;">🎈</div>
+
+<!-- CAKES -->
+<div class="floating float1" style="left:10%;font-size:42px;">🎂</div>
+<div class="floating float2" style="left:30%;font-size:42px;">🧁</div>
+<div class="floating float3" style="left:50%;font-size:42px;">🎂</div>
+<div class="floating float1" style="left:70%;font-size:42px;">🧁</div>
+<div class="floating float2" style="left:90%;font-size:42px;">🎂</div>
+
+<div class="container">
+
+<h1>Hey Naheeda 🥰</h1>
+
+<p>
+I could have simply wished you,
+</p>
+
+<p>
+"Happy Birthday ❤️"
+</p>
+
+<p>
+But that would've been too easy.
+</p>
+
+<p>
+So instead,
+I made something for you.
+</p>
+
+<p>
+Something filled with memories,
+moments,
+laughter,
+and a reason I've been saving for later.
+</p>
+
+<div class="reason">
+✨ For A Reason 💃 ✨
+</div>
+
+<p>
+Ready to find out?
+</p>
+
+<div class="warning">
+⚠️ This website may contain excessive memories, emotional damage, and one overly obsessed person. 🤷😂
+</div>
+
+<br>
+
+<a href="story.html" class="btn">
+❤️ Open My Heart ❤️
+</a>
+
+</div>
+
+</body>
+</html>
