@@ -5,17 +5,34 @@
 <title>Our Memories 💖</title>
 
 <style>
+
 body {
   margin: 0;
   font-family: Arial;
   background: linear-gradient(135deg, #ffdde1, #ee9ca7);
   text-align: center;
   color: white;
+  overflow-x:hidden;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-120vh); }
 }
 
 /* TITLE */
 h1 {
   margin-top: 20px;
+  font-size: 40px;
+  animation: fadeIn 2s ease;
 }
 
 /* MUSIC BUTTON */
@@ -27,6 +44,11 @@ button {
   background: #ff4d6d;
   color: white;
   cursor: pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
 }
 
 /* CONTAINER */
@@ -36,6 +58,7 @@ button {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
+  animation: fadeIn 2s ease;
 }
 
 /* CARD */
@@ -72,7 +95,6 @@ button {
   object-fit: cover;
 }
 
-/* BACK SIDE */
 .back {
   background: white;
   color: black;
@@ -83,10 +105,41 @@ button {
   transform: rotateY(180deg);
   text-align: center;
 }
+
+/* FADE */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* NEXT BUTTON */
+.next {
+  margin-top: 20px;
+  display:inline-block;
+  padding:15px 40px;
+  background:white;
+  color:#ff4d6d;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
 </style>
 </head>
 
 <body>
+
+<script>
+function createHeart(){
+  const h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"vw";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),10000);
+}
+setInterval(createHeart,300);
+</script>
 
 <h1>Our Beautiful Memories 💖</h1>
 
@@ -97,7 +150,6 @@ button {
 
 <button onclick="toggleMusic()">🎵 Play Music</button>
 
-<!-- CARDS -->
 <div class="container">
 
   <div class="card">
@@ -135,17 +187,21 @@ button {
 
 </div>
 
-<script>
-let music = document.getElementById("music");
-let playing = false;
+<a class="next" href="final.html">
+💌 One Last Page →
+</a>
 
-function toggleMusic() {
-  if (!playing) {
+<script>
+let music=document.getElementById("music");
+let playing=false;
+
+function toggleMusic(){
+  if(!playing){
     music.play();
-    playing = true;
+    playing=true;
   } else {
     music.pause();
-    playing = false;
+    playing=false;
   }
 }
 </script>
