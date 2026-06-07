@@ -2,49 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Our Story 💖</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  background: linear-gradient(135deg,#ffe6f0,#fff5f8,#fce4ec);
+  color: #333;
   text-align: center;
-  padding: 40px;
+  overflow-x:hidden;
 }
 
+/* MAIN CONTAINER */
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding: 80px 25px;
+  animation: fadeIn 2s ease;
 }
 
+/* HEADING */
 h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  color: #e91e63;
+  margin-bottom: 30px;
 }
 
+/* TEXT */
 p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 34px;
+  line-height: 1.9;
 }
 
-button {
+/* HIGHLIGHT WORDS */
+.highlight {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  color: #ff4d88;
   margin-top: 30px;
-  padding: 15px 25px;
-  font-size: 18px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 50px;
+  padding: 25px 60px;
+  font-size: 30px;
   border: none;
-  border-radius: 30px;
-  background: #ff4d6d;
+  border-radius: 60px;
+  background: linear-gradient(45deg,#ff4d88,#ff80aa);
   color: white;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 30px rgba(255,77,136,0.4);
   transition: 0.3s;
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
 </style>
 
 </head>
@@ -53,7 +81,7 @@ button:hover {
 
 <div class="container">
 
-<h1>Happy Birthday ❤️</h1>
+<h1>Our Story 💖</h1>
 
 <p>
 So, Miss Naheeda,<br><br>
@@ -64,18 +92,19 @@ It's a collection of our memories, our laughter, our arguments, our late-night c
 
 Normally, this is where I'd say,<br><br>
 
-"I'll take your hand and walk you through our story."<br><br>
+“I'll take your hand and walk you through our story.”<br><br>
 
-But let's be practical... you're reading this through a screen, and knowing you, you'd probably refuse to hold my hand anyway. 🤷😂<br><br>
+But let's be practical… you're reading this through a screen, and knowing you, you'd probably refuse to hold my hand anyway. 🤷😂<br><br>
 
-So let's skip that part and begin.<br><br>
-
-✨ Ready? ✨
+So let's skip that part and begin.
 </p>
 
-<!-- 🔥 BUTTON FIX -->
+<div class="highlight">
+✨ Ready? ✨
+</div>
+
 <button onclick="location.href='memory.html'">
-  💖 Open Our Story 💖
+💖 Continue Our Memories
 </button>
 
 </div>
