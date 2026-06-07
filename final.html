@@ -1,12 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Letter ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BACKGROUND */
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:'Cormorant Garamond',serif;
+    background:linear-gradient(135deg,#ffe6f0,#fff0f5,#fce4ec);
+    color:#333;
+}
+
+/* FLOATING HEARTS */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:20px;
+    animation:floatUp 10s linear infinite;
+    opacity:0.6;
+}
+
+/* FLOATING SPARKLES */
+.sparkle{
+    position:fixed;
+    bottom:-20px;
+    font-size:16px;
+    animation:floatUp 12s linear infinite;
+    opacity:0.5;
+}
+
+@keyframes floatUp{
+    from{transform:translateY(0);}
+    to{transform:translateY(-120vh);}
+}
+
+/* CENTER CARD */
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* GLASS CARD */
+.card{
+    max-width:900px;
+    padding:60px;
+    border-radius:40px;
+    background:rgba(255,255,255,0.65);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 60px rgba(255,77,136,0.25);
+    text-align:center;
+    animation:fadeIn 2s ease;
+}
+
+/* BIG TITLE */
+h1{
+    font-family:'Dancing Script',cursive;
+    font-size:85px;
+    color:#e91e63;
+    margin-bottom:20px;
+}
+
+/* NORMAL TEXT */
+p{
+    font-size:28px;
+    line-height:1.8;
+}
+
+/* HIGHLIGHT TEXT */
+.highlight{
+    font-family:'Dancing Script',cursive;
+    font-size:55px;
+    color:#ff4d88;
+    margin:30px 0;
+    text-shadow:0 0 10px rgba(255,77,136,0.3);
+}
+
+/* BUTTON */
+a{
+    display:inline-block;
+    margin-top:30px;
+    padding:20px 50px;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff4d88,#ff80aa);
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 0 25px rgba(255,77,136,0.5);
+    transition:0.3s;
+}
+
+a:hover{
+    transform:scale(1.08);
+}
+
+/* FADE IN */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING HEARTS SCRIPT -->
+<script>
+function createHeart(){
+    const h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="❤️";
+    h.style.left=Math.random()*100+"vw";
+    h.style.fontSize=(15+Math.random()*25)+"px";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),10000);
+}
+setInterval(createHeart,400);
+</script>
+
+<!-- FLOATING SPARKLES SCRIPT -->
+<script>
+function createSparkle(){
+    const s=document.createElement("div");
+    s.className="sparkle";
+    s.innerHTML="✨";
+    s.style.left=Math.random()*100+"vw";
+    s.style.fontSize=(10+Math.random()*20)+"px";
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(),12000);
+}
+setInterval(createSparkle,500);
+</script>
+
+<div class="container">
+
+<div class="card">
+
 <h1>Naheeda ❤️</h1>
 
 <p>
 If you’ve reached this page…<br><br>
 
 It means you didn’t just click through a website.<br>
-You actually walked through my thoughts, my efforts, and a small part of my heart I don’t usually express.<br><br>
+You walked through something I built with time, effort, and a lot of thoughts about you.<br><br>
 
-And now, there’s something I want to tell you honestly…
+And now I want to be honest with you…
 </p>
 
 <p>
@@ -21,19 +170,16 @@ A thing will stay with you only until it is used… and after some time it eithe
 
 And knowing you… you would probably say “nice” and then forget about it in 2 days anyway 😭😂<br><br>
 
-So yeah… I saved myself from that disappointment.<br><br>
-
-And maybe… you wouldn’t even remember this moment after that.
+So yeah… I saved myself from that disappointment.
 </p>
 
 <p>
 So instead of that, I wanted to do something different.<br><br>
 
-Something that could make you feel special on this day.<br>
-Something that could make you smile, laugh, and fill your day with a little more happiness than usual.<br><br>
+Something that could make you smile, laugh, and feel a little special today.<br><br>
 
-So I tried my best… not with a gift you can hold in your hand,<br>
-but with something you can feel.
+Not something you can hold in your hand…<br>
+but something you can feel in your heart.
 </p>
 
 <div class="highlight">
@@ -48,3 +194,12 @@ then I think I chose right.
 <div class="highlight">
 Happy Birthday Naheeda 🎂❤️
 </div>
+
+<a href="index.html">🔁 Restart Story</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
